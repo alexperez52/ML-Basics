@@ -14,7 +14,6 @@ data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
 print(data.head())
 
 predict = "G3"
-
 X = np.array(data.drop([predict], 1))
 y = np.array(data[predict])
 
@@ -26,4 +25,4 @@ acc = linear.score(x_test, y_test)
 print(acc)
 
 print("Co: \n" , linear.coef_)
-print("Intercept: \n" ,linear.intercept_)
+print("Intercept: \n", linear.intercept_)
